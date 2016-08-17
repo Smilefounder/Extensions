@@ -15,7 +15,7 @@
     <language />
     <tags>Kooboo CMS Toolkit</tags>
     <dependencies>
-        <dependency id="Kooboo.Core" version="4.3.0.109" />
+        <dependency id="Kooboo.Core" version="4.4.1.318" />
     </dependencies>
   </metadata>
 </package>

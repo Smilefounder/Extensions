@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Kooboo.CMS.Toolkit.Controls</RootNamespace>
     <AssemblyName>Kooboo.CMS.Toolkit.Controls</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,30 +31,87 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Kooboo, Version=4.2.1.826, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Kooboo.dll</HintPath>
+    <Reference Include="Kooboo, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Kooboo.CMS.Common, Version=4.2.1.826, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Kooboo.CMS.Common.dll</HintPath>
+    <Reference Include="Kooboo.CMS.Account, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Account.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Kooboo.CMS.Content, Version=4.2.1.826, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Kooboo.CMS.Content.dll</HintPath>
+    <Reference Include="Kooboo.CMS.Caching, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Caching.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Kooboo.CMS.Form, Version=4.2.1.826, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Kooboo.CMS.Form.dll</HintPath>
+    <Reference Include="Kooboo.CMS.Common, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Common.Runtime.Dependency.Ninject, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Common.Runtime.Dependency.Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Content, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Content.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Form, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Form.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Membership, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Membership.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Search, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Search.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Sites, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Sites.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Sites.TemplateEngines.Razor, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Sites.TemplateEngines.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Web, Version=4.5.0.817, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kooboo.Core.4.5.0.817\lib\Kooboo.CMS.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,7 +120,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-	<Compile Include="..\CMSAssemblyInfoGlobal.cs">
+    <Compile Include="..\CMSAssemblyInfoGlobal.cs">
       <Link>CMSAssemblyInfoGlobal.cs</Link>
     </Compile>
     <Compile Include="CascadingDropdown.cs" />
@@ -85,6 +144,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\DateTimePicker.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -15,9 +15,10 @@ namespace Kooboo.Extensions.UrlMapperExtension
     {
         #region IUrlMapper Members
 
-        public bool Map(Site site, string inputUrl, out string outputUrl, out RedirectType redirectType)
+        public bool Map(Site site, string inputUrl, string inputHost, out string outputUrl, out string outputHost, out RedirectType redirectType)
         {
             outputUrl = string.Empty;
+            outputHost = string.Empty;
             redirectType = RedirectType.Found_Redirect_302;
             if (string.IsNullOrEmpty(inputUrl))
             {
@@ -62,6 +63,7 @@ namespace Kooboo.Extensions.UrlMapperExtension
             }
             return false;
         }
+      
 
         private string wrapOutputUrl(string outputUrl)
         {
@@ -75,5 +77,6 @@ namespace Kooboo.Extensions.UrlMapperExtension
         }
 
         #endregion
+
     }
 }
